@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #8257E6;
+    --secondary-color: #40E655;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #222;
+    color: #FFF;
+}
+
+header, body, footer {
+    max-width: auto;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 100px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.logo img{
+    width: 75px;
+}
+
+
+
+header nav {
+    display: flex;
+    gap: 30px;
+}
+
+header nav a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+}
+
+header nav a:hover {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.presentation {
+    background-image: url('img/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 720px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.presentation img{
+    width: 250px;
+    border-radius: 100px;
+    margin: auto;
+    padding-top: 80px;
+    
+}
+
+.presentation h1 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--secondary-color);
+    padding-top: 50px;
+}
+
+.presentation h1 span {
+    color: #FFF;
+}
+
+.presentation p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-top: 15px;
+    font-weight: 200;
+}
+
+.redes{
+    text-align: center;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 0px 50px;
+     
+}
+
+.btn1{
+  background-color: #40E655;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  color: #FFF;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.btn2{
+    background-color: #8257e6;
+    border-radius: 5px;
+    width: 200px;
+    color: #FFF;
+    margin-left: 8px;
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.btn1:hover {
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.btn2:hover {
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.about-us {
+    background-image: url('img/code.png');
+    height: 820px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 24px;
+    color: var(--secondary-color);
+    padding-top: 60px;
+}
+
+.about-div {
+    background-color: #121214;
+    max-width: 1200px;
+    height: 620px;
+    border-radius: 20px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 120px;
+}
+
+.about-text h2 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-align: start;
+    margin-bottom: 30px;
+    font-size: 26px;
+}
+
+.about-text p {
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 40px;
+    max-width: 600px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+.about-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    
+}
+
+.about-logo .letter {
+    font-size: 140px;
+    font-weight: 800;
+}
+
+.about-logo .letter:nth-child(1) {
+    color: var(--primary-color);
+}
+
+.our-services {
+    padding: 60px 100px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.our-services .col-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.technologies {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.technologies img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.our-services h2 {
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.our-services p {
+    text-transform: uppercase;
+    font-size: 14px;
+    max-width: 500px;
+    padding-top: 50px;
+    font-weight: 200;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "A A B" "C D D";
+    margin-top: 60px;
+}
+
+.card {
+    width: 100%;
+    height: 400px;
+    background: #121214;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+}
+
+.card h2 {
+    color: #FFF;
+}
+
+.card:nth-child(1) {
+    grid-area: A;
+    background-image: url('img/welvinddesck.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.card:nth-child(2) {
+    grid-area: B;
+    background-image: url('img/welvindmobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card:nth-child(3) {
+    grid-area: C;
+    background-image: url('img/moviemobile.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card:nth-child(4) {
+    grid-area: D;
+    background-image: url('img/moviedesk.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card:hover{
+    
+    -webkit-animation: flip-horizontal-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: flip-horizontal-bottom 1.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+      
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-360deg);
+              transform: rotateX(-360deg);
+    }
+  }
+  @keyframes flip-horizontal-bottom {
+    0% {
+      -webkit-transform: rotateX(0);
+              transform: rotateX(0);
+    }
+    100% {
+      -webkit-transform: rotateX(-360deg);
+              transform: rotateX(-360deg);
+    }
+  }
+
+
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.social-media .item {
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.eclipse {
+    background: #000;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item img {
+    max-width: 50px;
+}
+
+.item p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.item a {
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 300;
+}
+
+.contact{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 15px;
+}
+
+.contact h2{
+    text-align: center;
+
+}
+
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 300;
+}
